@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Agenda de Contactos</title>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<div class="container">
+				<a href="#!" class="brand-logo">Lista de Contactos</a>
+				<ul class="right hide-on-med-and-down">
+					<!-- botón agregar contacto -->
+					<li><a href="#modal1" class="waves-effect waves-orange btn modal-trigger"> + </a></li>
+					<div id="modal1" class="modal">
+						<div class="modal-content">
+							<h4>Contactos</h4>
+						</div>
+						<div class="modal-footer">
+						<a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Aceptar</a>
+						</div>
+					</div>
+					<li><a class="waves-effect waves-light btn">search</a></li>
+				</ul>
+				<h4 class="brand-logo right">jQuery</h4>
+			</div>
+		</div>
+	</nav>
+
+<!-- scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="assets/js/app.js"></script>
+
+	
+	<script>
+		$(document).ready(function(){
+		$('modal.trigger').leanModal();
+		});
+	</script>
+
+</body>
+</html>
